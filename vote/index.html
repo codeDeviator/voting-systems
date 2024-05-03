@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vote for Your Favorite Option</h1>
+        <div class="options">
+            <div class="option">
+                <button onclick="vote('option1')">Option 1</button>
+                <span id="option1-count">0</span>
+                <span id="option1-percentage">0%</span>
+                <div class="vote-bar" id="option1-bar"></div>
+            </div>
+            <div class="option">
+                <button onclick="vote('option2')">Option 2</button>
+                <span id="option2-count">0</span>
+                <span id="option2-percentage">0%</span>
+                <div class="vote-bar" id="option2-bar"></div>
+            </div>
+            <div class="option">
+                <button onclick="vote('option3')">Option 3</button>
+                <span id="option3-count">0</span>
+                <span id="option3-percentage">0%</span>
+                <div class="vote-bar" id="option3-bar"></div>
+            </div>
+            <button onclick="resetVotes()">Reset Votes</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
